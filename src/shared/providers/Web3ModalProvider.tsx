@@ -15,7 +15,7 @@ const projectId = process.env.NEXT_PUBLIC_PROJECT_ID!!;
 
 const metadata = {
   name: 'SOLANA',
-  description: 'Solana ',
+  description: 'Solana',
   url: 'https://web3modal.com',
   icons: ['https://avatars.githubusercontent.com/u/37784886'],
 };
@@ -30,6 +30,7 @@ createWeb3Modal({
   solanaConfig,
   chains,
   projectId,
+  allowUnsupportedChain: true,
 });
 
 const Web3ModalProvider = ({ children }: IProps) => {
